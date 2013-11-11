@@ -1,0 +1,34 @@
+body {
+    background-color: #ccc;
+}
+* {
+    font-size: 12px;
+    font-family: 'Segoe UI', Ubuntu, sans-serif;
+}
+
+.input {
+    background-color: white;
+    border: 1px solid #555;
+    border-radius: 3px;
+    display:inline-block;
+    padding: 0.2em;
+    width: 500px;
+}
+
+.input span {
+    padding:0;
+    margin:0;
+}
+
+.pale {
+    color: #888;
+}
+
+.dark {
+    color:black;
+}
+
+[contenteditable]:focus {
+    background-color: gold;
+    outline: goldenrod solid 1px;
+}

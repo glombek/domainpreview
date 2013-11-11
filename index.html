@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    
+  <title>Domain Name Previewer</title>
+  <meta name="description" content="Domain Name Previewer">
+  <meta name="author" content="Joe Glombek">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Settings</h2>
+    <label for="domainName">Domain name:</label><input type="text" id="domainName" placeholder="example.com" /><input type="button" id="go" value="Go" />
+    <h2>Previews</h2>
+    <h3>Web Address</h3>
+    <div class="input pale"><span class="focusNext">http</span><span id="ssl" contenteditable></span><span class="focusNext">://</span><span contenteditable>www</span><span data-hideifnothing="before">.</span><output class="domainName dark focusNext"></output><span data-hideifnothing="after" style="display:none;">/</span><span contenteditable class="main"></span></div>
+    <h3>Email</h3>
+    To: <div class="input"><span contenteditable class="main">name</span>@<output class="domainName"></output></div>
+    
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
